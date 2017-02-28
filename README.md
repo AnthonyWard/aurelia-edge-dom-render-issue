@@ -3,7 +3,7 @@ To show an issue with the EDGE browser
 
 install the aurelia cli `npm install aurelia-cli -g`
 
-run `au build` then `au run`
+run `npm install` then `au run`
 
 Open EDGE and go to `http://localhost:9000/`
 
