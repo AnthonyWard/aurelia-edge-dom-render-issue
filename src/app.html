@@ -1,0 +1,31 @@
+<template>
+    <style>
+        div {
+            height: 60px;
+        }
+    </style>
+    <div>
+        <form>
+            <label>
+            <h2>Select 1 then 2</h2>
+            <select value.bind="selectedThing">
+                <option model.bind="null">Choose...</option>
+                <option repeat.for="thing of things"
+                        model.bind="thing">
+                    ${thing.id} - ${thing.name}
+                </option>
+            </select>
+        </label>
+        </form>
+    </div>
+    <div>
+        <h2>Id</h2>
+        ${selectedThing.id}
+    </div>
+    <div>
+        <h2>Name</h2>
+        ${selectedThing.name}</div>
+    <div>
+        <h2>Optional</h2>
+        ${selectedThing.optional}</div>
+</template>
